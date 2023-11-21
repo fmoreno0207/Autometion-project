@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: argocd
   source:
-    repoURL: https://github.com/fmoreno0207/simple-app.git
+    repoURL: https://github.com/fmoreno0207/Autometion-project.git
     path: argo-cd/self-manage/appprojects
     directory:
       recurse: true
