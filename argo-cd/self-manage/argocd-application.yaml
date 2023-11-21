@@ -9,7 +9,7 @@ spec:
     namespace: argocd
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/fmoreno0207/simple-app.git
+    repoURL: https://github.com/fmoreno0207/Autometion-project.git
     path: argo-cd
     helm:
       valueFiles:
