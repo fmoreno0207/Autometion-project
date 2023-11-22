@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/fmoreno0207/Autometion-project.git
-    path: argocd-self-manage
+    path: helm/argo-cd
     helm:
       valueFiles:
         - values-custom.yaml
