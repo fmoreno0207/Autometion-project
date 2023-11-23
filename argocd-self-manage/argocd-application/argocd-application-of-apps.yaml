@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: aargocd-application-of-apps
+  name: argocd-application-of-apps
   namespace: argocd
 spec:
   project: argocd
@@ -20,3 +20,25 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+
+
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-application-of-apps
+  namespace: argocd
+spec:  
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: argocd
+  source:
+    repoURL: https://github.com/fmoreno0207/Autometion-project.git
+    path: helm
+    directory:
+      recurse: true
+      jsonnet: {}
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
