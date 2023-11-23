@@ -10,7 +10,7 @@ spec:
   project: simple-app
   source:
     repoURL: https://github.com/fmoreno0207/Autometion-project.git
-    path: apps/simple-app
+    path: apps
     directory:
       recurse: true
       jsonnet: {}
