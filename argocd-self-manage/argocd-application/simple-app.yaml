@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: simple-app
     server: https://kubernetes.default.svc
-  project: argocd
+  project: simple-app
   source:
     repoURL: https://github.com/fmoreno0207/Autometion-project.git
     path: apps/simple-app
