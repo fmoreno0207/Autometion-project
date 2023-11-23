@@ -10,7 +10,7 @@ spec:
   project: argocd
   source:
     repoURL: https://github.com/fmoreno0207/Autometion-project.git
-    path: helm
+    path: argocd-self-manage/argocd-application
     directory:
       recurse: true
       jsonnet: {}
