@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: simple-app
+  name: argocd
   namespace: argocd
 spec:
-  project: simple-app
+  project: argocd
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/fmoreno0207/Autometion-project.git
-    path: custon-app
+    path: apps
     helm:
       valueFiles:
         - values-custom.yaml
