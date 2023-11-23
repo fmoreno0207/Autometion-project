@@ -1,3 +1,4 @@
+#Este yaml monitorea el directorio donde estan los manifiestos que crean los proyectos en argocd
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -10,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/fmoreno0207/Autometion-project.git
-    path: apps
+    path: argocd-self-manage/argocd-project
     helm:
       valueFiles:
         - values-custom.yaml
