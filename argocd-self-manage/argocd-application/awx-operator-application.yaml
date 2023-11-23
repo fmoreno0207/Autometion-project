@@ -6,7 +6,7 @@ metadata:
 spec:
   project: awx-operator
   destination:
-    namespace: argocd
+    namespace: awx-operator
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/fmoreno0207/Autometion-project.git
