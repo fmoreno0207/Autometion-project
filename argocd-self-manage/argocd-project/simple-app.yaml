@@ -1,8 +1,8 @@
-apiVersion: argoproj.io/v1alpha1
+apiVersion: 
 kind: AppProject
 metadata:
   name: simple-app
-  namespace: srgocd
+  namespace: argocd
 spec:
   clusterResourceWhitelist:
   - group: '*'
