@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: asimple-app
+  namespace: argocd
+spec:  
+  destination:
+    namespace: simple-app
+    server: https://kubernetes.default.svc
+  project: argocd
+  source:
+    repoURL: https://github.com/fmoreno0207/Autometion-project.git
+    path: apps
+    directory:
+      recurse: true
+      jsonnet: {}
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
