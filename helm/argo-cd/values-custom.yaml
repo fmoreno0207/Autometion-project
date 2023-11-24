@@ -1,0 +1,3 @@
+## Server service configuration
+  service:
+    type: LoadBalancer
