@@ -1849,7 +1849,7 @@ server:
     # -- Server service https port appProtocol. (should be upper case - i.e. HTTPS)
     # servicePortHttpsAppProtocol: HTTPS
     # -- LoadBalancer will get created with the IP specified in this field
-    loadBalancerIP: "129.80.184.172"
+    loadBalancerIP: ""
     # -- Source IP ranges to allow access to service from
     loadBalancerSourceRanges: []
     # -- Server service external IPs
