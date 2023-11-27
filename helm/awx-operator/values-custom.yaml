@@ -16,5 +16,5 @@ AWX:
       requests:
         storage: 8Gi
       limits:
-        storage: 50Gi
+        storage: 10Gi
     postgres_storage_class: oci
