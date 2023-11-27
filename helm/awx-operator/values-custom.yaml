@@ -1,20 +1,4 @@
 AWX:
   # enable use of awx-deploy template
   enabled: true
-  spec:
-    service_type: clusterip
-    ingress_type: ingress
-    hostname: awx-test.pagofacil.com.ar
-    postgres_resource_requirements:
-      requests:
-        cpu: 500m
-        memory: 1Gi
-      limits:
-        cpu: 900m
-        memory: 4Gi
-    postgres_storage_requirements:
-      requests:
-        storage: 8Gi
-      limits:
-        storage: 50Gi
-    postgres_storage_class: nfs-client
+  
