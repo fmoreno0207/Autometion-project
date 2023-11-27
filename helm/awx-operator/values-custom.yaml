@@ -8,7 +8,7 @@ postgresql:
   postgresqlUsername: awx
   postgresqlPVC:
     enabled: true
-    storageClassName: nfs-client
+    storageClassName: oci
     accessModes:
       - ReadWriteOnce
     size: 8Gi
