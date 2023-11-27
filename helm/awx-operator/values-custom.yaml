@@ -4,7 +4,7 @@ AWX:
   spec:
     service_type: clusterip
     ingress_type: ingress
-    hostname:
+    hostname: awx-fer.com
     postgres_resource_requirements:
       requests:
         cpu: 500m
