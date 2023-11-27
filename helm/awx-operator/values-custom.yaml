@@ -1,31 +1,3 @@
 AWX:
   # enable use of awx-deploy template
   enabled: true
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  creationTimestamp: '2023-11-27T18:19:46Z'
-  finalizers:
-    - kubernetes.io/pvc-protection
-  labels:
-    app.kubernetes.io/component: database
-    app.kubernetes.io/instance: postgres-13-awx
-    app.kubernetes.io/managed-by: awx-operator
-    app.kubernetes.io/name: postgres-13
-  name: postgres-13-awx-postgres-13-0
-  namespace: awx-operator
-  resourceVersion: '5126950'
-  uid: 20d96cf3-4ef9-40d2-851c-a6f3e409f1f9
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    limits:
-      storage: 50Gi
-    requests:
-      storage: 8Gi
-  storageClassName: nfs-client
-  volumeMode: oci
-status:
-  phase: Pending
-
