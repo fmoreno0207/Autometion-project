@@ -1,12 +1,12 @@
 aapiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: awx
+  name: awx-operator
   namespace: argocd
 spec:
-  project: awx
+  project: awx-operator
   destination:
-    namespace: awx
+    namespace: awx-operator
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/fmoreno0207/Autometion-project.git
