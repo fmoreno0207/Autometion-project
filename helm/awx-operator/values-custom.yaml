@@ -1,6 +1,6 @@
 AWX:
   # enable use of awx-deploy template
-  enabled: true
+  enabled: false
   spec:
 #    service_type: clusterip
 #    ingress_type: ingress
