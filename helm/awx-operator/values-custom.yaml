@@ -1,21 +1,3 @@
 AWX:
   # enable use of awx-deploy template
   enabled: true
-
-postgresql:
-  postgresqlDatabase: awx
-  postgresqlPassword: mysecretpassword
-  postgresqlUsername: awx
-  postgresqlPVC:
-    enabled: true
-    storageClassName: oci
-    accessModes:
-      - ReadWriteOnce
-    size: 8Gi
-  postgresql.resources:
-    requests:
-      memory: 1Gi
-      cpu: 500m
-    limits:
-      memory: 4Gi
-      cpu: 900m
