@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd-application-of-apps
+  name: application-of-apps
   namespace: argocd
 spec:  
   destination:
-    namespace: argocd
+    namespace: application-of-apps
     server: https://kubernetes.default.svc
   project: argocd
   source:
@@ -18,3 +18,5 @@ spec:
     automated:
       selfHeal: true
       prune: true
+    syncOptions:
+    - CreateNamespace=true  
